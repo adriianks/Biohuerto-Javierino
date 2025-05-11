@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Biohuerto Moderno</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <header>
+    <h1>🌱 Biohuerto Moderno</h1>
+    <p>Conoce nuestras plantas y el mapa del biohuerto interactivo</p>
+    <nav>
+      <button onclick="mostrarSeccion('plantas')">Tipos de Plantas</button>
+      <button onclick="mostrarSeccion('mapa')">Mapa del Biohuerto</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Sección de Tipos de Plantas -->
+    <section id="plantas" class="seccion">
+      <h2>Tipos de Plantas</h2>
+      <div class="plantas-grid">
+        <!-- Plantas -->
+        <div class="card"><img src="lechuga ccccc.webp" alt="Lechuga"><h3>Lechuga</h3><p>Necesita sombra parcial y riego constante.</p></div>
+        <div class="card"><img src="zanahoria cccc.jpg" alt="Zanahoria"><h3>Zanahoria</h3><p>Sol directo, suelo arenoso y riego moderado.</p></div>
+        <div class="card"><img src="tomate cccc.webp" alt="Tomate"><h3>Tomate</h3><p>Clima cálido, mucha luz solar y riego regular.</p></div>
+        <div class="card"><img src="espinaca.jpg" alt="Espinaca"><h3>Espinaca</h3><p>Clima fresco, sombra parcial y riego ligero.</p></div>
+        <div class="card"><img src="pepino.webp" alt="Pepino"><h3>Pepino</h3><p>Sol, suelo húmedo y temperaturas cálidas.</p></div>
+        <div class="card"><img src="albahaca.jpg" alt="Albahaca"><h3>Albahaca</h3><p>Sol directo y riego moderado.</p></div>
+        <div class="card"><img src="acelga.jpg" alt="Acelga"><h3>Acelga</h3><p>Sombra parcial y riego constante.</p></div>
+        <div class="card"><img src="rabanito.jpg" alt="Rabanito"><h3>Rabanito</h3><p>Clima fresco, riego frecuente.</p></div>
+        <div class="card"><img src="pimiento.jpg" alt="Pimiento"><h3>Pimiento</h3><p>Sol directo y suelo fértil bien drenado.</p></div>
+      </div>
+    </section>
+
+    <!-- Sección Mapa -->
+    <section id="mapa" class="seccion hidden mapa-biohuerto">
+      <h2>Mapa del Biohuerto</h2>
+
+      <div class="contenedor-mapa">
+        <div class="zonaL">
+          <div class="zona zona-1" onclick="mostrarZona(1)">Zona A</div>
+          <div class="zona zona-2" onclick="mostrarZona(2)">Zona B</div>
+          <div class="zona zona-3" onclick="mostrarZona(3)">Zona C</div>
+        </div>
+        <img src="mapa-pequeño.png" alt= "Imagen del Mapa" class="imagen-mapa" />
+      </div>
+
+      <div class="info-zona" id="info-zona">
+        <p>Haz clic en una zona para ver las plantas agrupadas por cuidados.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Biohuerto Moderno. Todos los derechos reservados.</p>
+    <img src="logo-pequeno.png" alt="Logo pequeño" class="logo-footer" />
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
